@@ -91,7 +91,7 @@ def charlie():
     input("type enter to progress")  
     
     print("1. You seem to be the most normal around here.")  
-    print("2. Nice trunk you have (snabel på svenska)")  
+    print("2. Nice trunk you have")  
     choice = int(input("what do you do:"))  
 
     if choice == 1:  
@@ -117,7 +117,7 @@ def charlie():
         bella() 
         
 def bella():
-    print("Bella :）")	
+    print("Bella")	
     os.system("cowsay -f blowfish  I want a cheeseroll.")
     input("type enter to progress")   
     os.system("cowsay -f blowfish  CHEESEROLL CHEESEROLL CHEEESSEEEEHH-RRROOOOOLLEEEEEHHH")
@@ -135,11 +135,44 @@ def bella():
         input("type enter to progress") 
         print("Bella blew up into thousands... Cheeserolls??")
         input("NEXT")
+        milo()
     else:
         os.system("cowsay -f blowfish  Cheeseroll :（")
         input("type enter to progress") 
         print("Bella took a giant cheeseroll and flew away on it")   
-        input("NEXT")   	
+        input("NEXT")
+        milo()
+
+def milo():
+    print("Milo")
+    os.system("cowsay -f stegosaurus Gigidi-gagidi-go.") 
+    input("type enter to progress")
+    os.system("cowsay -f stegosaurus That is my very own greeting.") 
+    input("Would you like a cup of tea?")
+    
+    print("1. Aye")  
+    print("2. Not bloody likely")  
+    choice = int(input("what do you do:"))  
+
+    if choice == 1:  
+        os.system("cowsay -f stegosaurus The bees knees!") 
+        input("type enter to progress")
+        os.system("cowsay -f stegosaurus ...")
+        input("type enter to progress") 
+        os.system("cowsay -f stegosaurus *slurp*") 
+        input("type enter to progress")
+        os.system("cowsay -f stegosaurus ...") 
+        input("type enter to progress")
+        os.system("cowsay -f stegosaurus cheers for the cuppa!")
+        input("type enter to progress")
+        print("Milo yomped away") 			
+        input("NEXT")      
+        
+    else:    
+        os.system("cowsay -f stegosaurus No cup of tea? Blimey, youre missing out mate!")
+        input("type enter to progress")
+        print("Milo yomped away") 			
+        input("NEXT")    	     	        	   	     	        	
 
 # Game loop  
 show_intro()  
